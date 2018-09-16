@@ -1,6 +1,6 @@
 FROM library/node:alpine
 
-WORKDIR /app
+WORKDIR /workspace
 
 RUN npm install -g \
     grunt-cli \
@@ -21,7 +21,7 @@ RUN npm install -g \
     grunt-qunit-junit \
     && npm cache clean --force
 
-VOLUME /app/node_modules
+VOLUME /workspace/node_modules
 
 ENTRYPOINT ["grunt"]
 
