@@ -1,10 +1,10 @@
-FROM node:alpine
+FROM node:lts-alpine3.11
 
 WORKDIR /workspace
 
 RUN npm install -g \
     grunt-cli \
-    && npm install \
+ && npm install \
     grunt \
     grunt-contrib-concat \
     grunt-contrib-copy \
@@ -12,7 +12,7 @@ RUN npm install -g \
     grunt-contrib-less \
     grunt-contrib-uglify \
     grunt-mkdir \
-    && npm cache clean --force
+ && npm cache clean --force
 
 VOLUME /workspace/node_modules
 
