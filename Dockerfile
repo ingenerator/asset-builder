@@ -15,10 +15,11 @@ RUN npm install -g \
     grunt-contrib-less \
     grunt-contrib-uglify \
     grunt-mkdir \
-    grunt-postcss \
+    @lodder/grunt-postcss \
     grunt-sass \
     node-sass \
     pixrem \
+    postcss \
  && npm cache clean --force
 
 VOLUME /workspace/node_modules
