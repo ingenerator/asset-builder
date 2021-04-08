@@ -19,6 +19,7 @@ RUN npm install -g \
     grunt-sass \
     node-sass \
     pixrem \
+    postcss \
  && npm cache clean --force
 
 VOLUME /workspace/node_modules
