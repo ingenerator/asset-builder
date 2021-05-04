@@ -1,0 +1,7 @@
+compiled/base_js.min.js
+compiled/base_js.min.js.map
+compiled/copied/1.txt
+compiled/copied/2.txt
+compiled/js/base_js.js
+compiled/site.css
+compiled/site.css.map

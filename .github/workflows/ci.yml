@@ -29,6 +29,9 @@ jobs:
       - name: Build image
         run: docker build . --file Dockerfile --tag $IMAGE_NAME
 
+      - name: Run basic container smoketests
+        run:  DOCKER_IMAGE=$IMAGE_NAME smoketests/smoketests.sh
+
       # Only attempt to publish the image if this is triggered by a `push` (e.g. direct to the repo by a collaborator,
       # not an external pull request). This step would anyway fail on a pull_request workflow because the required
       # secret would not be available.
