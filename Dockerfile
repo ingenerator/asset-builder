@@ -24,6 +24,8 @@ RUN npm install -g \
 
 VOLUME /workspace/node_modules
 
+LABEL org.opencontainers.image.source=https://github.com/ingenerator/asset-builder
+
 ENTRYPOINT ["grunt"]
 
 CMD ["--help"]
